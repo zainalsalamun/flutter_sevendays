@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# flutter_sevendays
-=======
 # flutter_sevendays
 
 A new Flutter project.
