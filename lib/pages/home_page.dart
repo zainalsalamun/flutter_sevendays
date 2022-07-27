@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sevendays/pages/screen_singin.dart';
+import 'package:flutter_sevendays/pages/second_empty.dart';
+import 'package:flutter_sevendays/pages/second_pricing.dart';
+import 'package:flutter_sevendays/pages/second_random.dart';
+import 'package:flutter_sevendays/pages/second_rating.dart';
 import 'package:flutter_sevendays/pages/second_splash.dart';
 import 'package:flutter_sevendays/pages/second_started.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -141,7 +145,13 @@ class HomePage extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => SecondEmpty(),
+                                  ));
+                            },
                             child: Image.asset(
                               'assets/empty_state.png',
                               width: 150,
@@ -169,7 +179,13 @@ class HomePage extends StatelessWidget {
                           Column(
                             children: [
                               InkWell(
-                                onTap: () {},
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => SecondRating(),
+                                      ));
+                                },
                                 child: Image.asset(
                                   'assets/rating.png',
                                   width: 150,
@@ -192,7 +208,13 @@ class HomePage extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => SecondPricing(),
+                                  ));
+                            },
                             child: Image.asset(
                               'assets/pricing.png',
                               width: 150,
@@ -215,7 +237,12 @@ class HomePage extends StatelessWidget {
                       ),
                       SizedBox(height: 10),
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SecondRandom()));
+                        },
                         child: Image.asset('assets/cart_page.png'),
                       ),
                     ],

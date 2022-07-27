@@ -6,7 +6,7 @@ void main() => runApp(SevenDays());
 class SevenDays extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
