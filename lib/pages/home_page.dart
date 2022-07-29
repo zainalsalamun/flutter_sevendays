@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sevendays/pages/first_empty.dart';
+import 'package:flutter_sevendays/pages/first_pricing.dart';
+import 'package:flutter_sevendays/pages/first_random.dart';
+import 'package:flutter_sevendays/pages/first_rating.dart';
+import 'package:flutter_sevendays/pages/first_splash.dart';
+import 'package:flutter_sevendays/pages/first_started.dart';
+import 'package:flutter_sevendays/pages/fisrt_signin.dart';
 import 'package:flutter_sevendays/pages/screen_singin.dart';
 import 'package:flutter_sevendays/pages/second_empty.dart';
 import 'package:flutter_sevendays/pages/second_pricing.dart';
@@ -64,8 +71,8 @@ class HomePage extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => SecondSplash(),
-                                  ));
+                                      //builder: (context) => SecondSplash()));
+                                      builder: (context) => FisrtSplash()));
                             },
                             child: Image.asset(
                               'assets/splash.png',
@@ -91,8 +98,8 @@ class HomePage extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => SecondStarted(),
-                                  ));
+                                      builder: (context) => SecondStarted()));
+                              //builder: (context) => FirstStarted()));
                             },
                             child: Image.asset(
                               'assets/started_page.png',
@@ -123,8 +130,8 @@ class HomePage extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => SecondSignin(),
-                                  ));
+                                      //builder: (context) => SecondSignin(),
+                                      builder: (context) => FirstSignIn()));
                             },
                             child: Image.asset(
                               'assets/signscreen.png',
@@ -149,7 +156,8 @@ class HomePage extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => SecondEmpty(),
+                                    //builder: (context) => SecondEmpty(),
+                                    builder: (context) => FirstEmpty(),
                                   ));
                             },
                             child: Image.asset(
@@ -183,7 +191,8 @@ class HomePage extends StatelessWidget {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => SecondRating(),
+                                        //builder: (context) => SecondRating(),
+                                        builder: (context) => FisrtRating(),
                                       ));
                                 },
                                 child: Image.asset(
@@ -212,7 +221,9 @@ class HomePage extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => SecondPricing(),
+                                    //builder: (context) => SecondPricing(),
+
+                                    builder: (context) => FirstPricing(),
                                   ));
                             },
                             child: Image.asset(
@@ -241,7 +252,8 @@ class HomePage extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => SecondRandom()));
+                                  //builder: (context) => SecondRandom()));
+                                  builder: (context) => FirstRandom()));
                         },
                         child: Image.asset('assets/cart_page.png'),
                       ),

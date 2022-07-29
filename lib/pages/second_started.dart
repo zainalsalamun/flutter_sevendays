@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SecondStarted extends StatelessWidget {
@@ -26,7 +24,7 @@ class SecondStarted extends StatelessWidget {
                 fontWeight: FontWeight.w600,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Text(
@@ -36,13 +34,13 @@ class SecondStarted extends StatelessWidget {
                 fontSize: 16,
               ),
             ),
-            SizedBox(height: 60),
+            const SizedBox(height: 60),
             Image.asset(
               'assets/gallery.png',
               width: 295,
               height: 402,
             ),
-            SizedBox(height: 70),
+            const SizedBox(height: 70),
             Container(
               width: 295,
               height: 55,
@@ -59,7 +57,7 @@ class SecondStarted extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Center(
               child: Text(
                 'Terms & Conditions',
